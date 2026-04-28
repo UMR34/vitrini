@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Vitrinni · Academias e Produtos de Artes Marciais</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="brand-area">
+            <div class="logo">
+                <img src="vitrinni-logo.png" alt="Vitrinni" class="logo-img">
+            </div>
+        </div>
+
+        <div class="nav-actions">
+            <div class="language-selector" aria-label="Idioma atual português Brasil">
+                <i class="fas fa-globe-americas"></i>
+                <span>PT · BR</span>
+                <i class="fas fa-chevron-down" style="font-size: 0.7rem; opacity: 0.7;"></i>
+            </div>
+
+            <div class="search-wrapper">
+                <input type="text" class="search-input" placeholder="Buscar arte marcial, academia, produto..." aria-label="Campo de pesquisa">
+                <button class="search-btn" aria-label="Buscar">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+
+            <div class="menu-section">
+                <div class="login-link" aria-label="Fazer login">
+                    <i class="fas fa-user-circle"></i>
+                    <span>Fazer login</span>
+                </div>
+                <div class="menu-icon" aria-label="Menu principal">
+                    <i class="fas fa-bars"></i>
+                    <span>Menu</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<main class="hero-mock">
+    <div>
+        <h1 class="hero-title">🥋 Academias de Artes Marciais</h1>
+        <p class="hero-sub">Encontre o estilo perfeito perto de você e equipe-se com os melhores produtos.</p>
+    </div>
+
+    <!-- estilos de luta no começo da pag -->
+    <div class="card-grid">
+        <div class="martial-card" id="cardJudo">
+            <i class="fas fa-fist-raised"></i>
+            <h3>🥋 Jiu-Jitsu & Judô</h3>
+            <p>Academias especializadas em grappling, kimono e luta no chão. Para todas as idades.</p>
+            <span class="badge-new">+80 unidades</span>
+        </div>
+        <div class="martial-card" id="cardMuay">
+            <i class="fas fa-running"></i>
+            <h3>🥊 Muay Thai & Boxe</h3>
+            <p>Treinos intensos, condicionamento físico e defesa pessoal.</p>
+            <span class="badge-new">Alta performance</span>
+        </div>
+        <div class="martial-card" id="cardKungfu">
+            <i class="fas fa-dragon"></i>
+            <h3>🐉 Kung Fu & Taekwondo</h3>
+            <p>Disciplina milenar, chutes voadores e desenvolvimento mental.</p>
+            <span class="badge-new">Artes tradicionais</span>
+        </div>
+    </div>
+
+    <!-- imagens dos produtos em destaque -->
+    <div class="featured-products">
+        <div class="products-header">
+            <h2>Produtos em destaque</h2>
+            <div class="ver-todos" id="verTodosProdutos">Ver todos →</div>
+        </div>
+
+        <!-- card slide dos produtos em destaque -->
+        <div class="products-slideshow-container">
+            <div class="slideshow-track" id="slideshowTrack">
+                <div class="product-slide">
+                    <div class="product-card">
+                        <div class="product-img"><img src="https://i.gyazo.com/db562714f61e5882ec807531a4a8cc42.png" alt="Luva de Boxe Pro"></div>
+                        <div class="product-info">
+                            <h4>Luva de Boxe Pro</h4>
+                            <div class="product-category">Boxe</div>
+                            <div class="product-price">R$ 149,90</div>
+                            <button class="btn-product">Comprar</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img"><img src="https://i.gyazo.com/5e140428c5ba0c0bffbd1f496977d5e6.png" alt="Capacete de Muay Thai"></div>
+                        <div class="product-info">
+                            <h4>Capacete de Muay Thai</h4>
+                            <div class="product-category">Muay Thai</div>
+                            <div class="product-price">R$ 209,90</div>
+                            <button class="btn-product">Comprar</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img"><img src="https://i.gyazo.com/1a74d9ebabbef241109781e5b8009700.png" alt="Kimono Jiu-Jitsu"></div>
+                        <div class="product-info">
+                            <h4>Kimono</h4>
+                            <div class="product-category">Jiu-Jitsu</div>
+                            <div class="product-price">R$ 249,90</div>
+                            <button class="btn-product">Comprar</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img"><img src="https://i.gyazo.com/a4efdb98a4e654638034a18f93d244c5.png" alt="Caneleira Muay Thai"></div>
+                        <div class="product-info">
+                            <h4>Caneleira</h4>
+                            <div class="product-category">Muay Thai</div>
+                            <div class="product-price">R$ 189,90</div>
+                            <button class="btn-product">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-slide">
+                    <div class="product-card">
+                        <div class="product-img"><img src="https://i.gyazo.com/9258b3068f7d4bc493ab7c173152a665.png" alt="Cronômetro Tatame"></div>
+                        <div class="product-info">
+                            <h4>Cronômetro Tatame</h4>
+                            <div class="product-category">Timer Digital</div>
+                            <div class="product-price">R$ 99,90</div>
+                            <button class="btn-product">Comprar</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img"><img src="https://i.gyazo.com/3fa8e7e83f31a8ac182abc4dfcc18630.png" alt="Faixa Preta Bordada"></div>
+                        <div class="product-info">
+                            <h4>Faixa Preta Bordada</h4>
+                            <div class="product-category">Jiu-Jitsu / Judô</div>
+                            <div class="product-price">R$ 89,90</div>
+                            <button class="btn-product">Comprar</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img"><img src="https://i.gyazo.com/ece2c095f5e413fb22ecefa7a73a16a2.png" alt="Bastões de Treino"></div>
+                        <div class="product-info">
+                            <h4>Bastões de Treino</h4>
+                            <div class="product-category">Defesa Pessoal</div>
+                            <div class="product-price">R$ 49,90</div>
+                            <button class="btn-product">Comprar</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img"><img src="https://i.gyazo.com/5e140428c5ba0c0bffbd1f496977d5e6.png" alt="Capacete de Muay Thai"></div>
+                        <div class="product-info">
+                            <h4>Capacete de Muay Thai</h4>
+                            <div class="product-category">Muay Thai</div>
+                            <div class="product-price">R$ 49,90</div>
+                            <button class="btn-product">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- navegacao do card slide -->
+            <div class="slideshow-nav">
+                <button id="prevProductSlide"><i class="fas fa-chevron-left"></i></button>
+                <button id="nextProductSlide"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            <div class="slideshow-dots" id="productDots"></div>
+        </div>
+    </div>
+
+    <!-- lista de academias em destaque -->
+    <div class="featured-section">
+        <div class="section-header">
+            <h2>Academias em destaque perto de você</h2>
+            <div class="ver-todos" id="verTodosLink">Ver todas →</div>
+        </div>
+        <div class="academy-list" id="academyList">
+            <div class="academy-item" data-modal="academy1">
+                <div class="academy-img"><i class="fas fa-shield-alt"></i></div>
+                <div class="academy-info">
+                    <h4>Nome da academia 1</h4>
+                    <span class="modalidade">Jiu-Jitsu Brasileiro</span>
+                    <div class="rating">⭐ 4.9 (X avaliações)</div>
+                    <div class="distance">📍 1.2km · Zona Sul</div>
+                    <button class="btn-call ver-mais-btn" data-nome="Dojo Central Jiu-Jitsu">Ver horários</button>
+                </div>
+            </div>
+            <div class="academy-item" data-modal="academy2">
+                <div class="academy-img"><i class="fas fa-medal"></i></div>
+                <div class="academy-info">
+                    <h4>Nome da academia 2</h4>
+                    <span class="modalidade">Boxe Olímpico</span>
+                    <div class="rating">⭐ 4.8 (X avaliações)</div>
+                    <div class="distance">📍 0.8km · Centro</div>
+                    <button class="btn-call ver-mais-btn" data-nome="Boxe Rino & Fitness">Ver horários</button>
+                </div>
+            </div>
+            <div class="academy-item" data-modal="academy3">
+                <div class="academy-img"><i class="fas fa-hand-peace"></i></div>
+                <div class="academy-info">
+                    <h4>Nome da academia 3</h4>
+                    <span class="modalidade">Taekwondo WT</span>
+                    <div class="rating">⭐ 4.7 (X avaliações)</div>
+                    <div class="distance">📍 2.1km · Norte</div>
+                    <button class="btn-call ver-mais-btn" data-nome="Taekwondo金星">Ver horários</button>
+                </div>
+            </div>
+            <div class="academy-item" data-modal="academy4">
+                <div class="academy-img"><i class="fas fa-fist-raised"></i></div>
+                <div class="academy-info">
+                    <h4>Nome da academia 4</h4>
+                    <span class="modalidade">Krav Maga</span>
+                    <div class="rating">⭐ 4.9 (X avaliações)</div>
+                    <div class="distance">📍 1.5km · Leste</div>
+                    <button class="btn-call ver-mais-btn" data-nome="Krav Maga Defesa Ativa">Ver horários</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="footer-note">
+        🥊 VITRINNI — Encontre sua academia ideal e os melhores equipamentos para seu treino.
+    </div>
+</main>
+
+<script>
+    (function() {
+        // script para card slide dos produtos em destaque
+        const track = document.getElementById('slideshowTrack');
+        const slides = document.querySelectorAll('.product-slide');
+        const totalSlides = slides.length;
+        let currentIndex = 0;
+
+        const prevBtn = document.getElementById('prevProductSlide');
+        const nextBtn = document.getElementById('nextProductSlide');
+        const dotsContainer = document.getElementById('productDots');
+
+        function updateSlideshow() {
+            if (!track) return;
+            const slideWidth = 100 / totalSlides;
+            track.style.transform = `translateX(-${currentIndex * slideWidth}%)`;
+            updateDots();
+        }
+
+        function updateDots() {
+            if (!dotsContainer) return;
+            dotsContainer.innerHTML = '';
+            for (let i = 0; i < totalSlides; i++) {
+                const dot = document.createElement('span');
+                dot.classList.add('dot');
+                if (i === currentIndex) dot.classList.add('active');
+                dot.addEventListener('click', () => {
+                    currentIndex = i;
+                    updateSlideshow();
+                });
+                dotsContainer.appendChild(dot);
+            }
+        }
+
+        if (prevBtn && nextBtn && totalSlides > 0) {
+            prevBtn.addEventListener('click', () => {
+                currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+                updateSlideshow();
+            });
+            nextBtn.addEventListener('click', () => {
+                currentIndex = (currentIndex + 1) % totalSlides;
+                updateSlideshow();
+            });
+            updateSlideshow();
+        }
+    })();
+</script>
+</body>
+</html>
